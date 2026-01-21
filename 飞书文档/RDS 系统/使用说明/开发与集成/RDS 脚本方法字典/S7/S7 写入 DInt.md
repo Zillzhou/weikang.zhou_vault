@@ -1,0 +1,76 @@
+# S7 写入 DInt
+
+## S7 写入 DInt
+## 方法说明
+S7 写入 DInt。
+function writeS7DInt(type: string, ip: string, blockAndOffset: string, value: number): boolean;
+
+## 输入参数
+type，string 类型，PLC 类型，可选值（区分大小写）：S1200/S300/S400/S1500/S200Smart/S200。
+ip，string 类型，PLC IP。
+blockAndOffset，string 类型，读取的地址，支持的区域取值示例如下（区分大小写）： 
+
+## 地址名称
+
+## 地址代号
+
+## 示例
+
+## 中间寄存器
+
+## M
+
+## M100,M200
+
+## 输入寄存器
+
+## I
+
+## I100,I200
+
+## 输出寄存器
+
+## Q
+
+## Q100,Q200
+
+## DB块寄存器
+
+## DB
+
+## DB1.100,DB1.200.7
+
+## V寄存器
+
+## V
+
+## V100,V200
+
+## 定时器的值
+
+## T
+
+## T100,T200
+
+## 计数器的值
+
+## C
+
+## C100,C200
+
+## 智能输入寄存器
+
+## AI
+
+## AI100,AI200
+
+## 智能输出寄存器
+
+## AQ
+
+## AQ100,AQ200
+value，number 类型，写入的值。
+## 输出参数
+成功返回 true，失败返回 false。
+## 异常
+本方法不抛出异常，异常捕获后只作日志记录。
